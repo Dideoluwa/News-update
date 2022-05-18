@@ -37,6 +37,8 @@ let fetchedNews = (source) => {
         para1.innerText = result.title
         img.src = result.image
         let button = document.createElement('p')
+        let container = document.createElement('div')
+        container.classList.add('container-edit')
         let link = document.createElement('a')
         link.href = result.url
         link.innerText = 'Read more'
@@ -44,7 +46,8 @@ let fetchedNews = (source) => {
         card2.classList.add('card2-edit')
         card2.append(para1)
         card2.append(para3)
-        card2.append(img)
+        container.append(img)
+        card2.append(container)
         card2.append(para2)
         card2.append(para)
         button.append(link)
