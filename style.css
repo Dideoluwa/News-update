@@ -177,7 +177,7 @@ p a:hover {
 
 @media only screen and (max-width: 414px) {
     #h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     .heading2 {
         color: black;
